@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
-    
+    <div class="container">
+        <!-- action attribute is removed from the form as we are not submitting the form yet. -->
+        <form id="formValidator" class="form-validator">
+            <h2>Register with us</h2>
+            <div class="form-control">
+                <label for="formUsername">Username</label>
+                <input type="text" id="formUsername" placeholder="Enter Username">
+                <!-- The below tag depicts the error message to be displayed -->
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="formEmail">Email</label>
+                <input type="text" id="formEmail" placeholder="Enter formEmail">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="formPassword">Password</label>
+                <input type="password" id="formPassword" placeholder="Enter Password">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="formPasswordConfirm">Password</label>
+                <input type="password" id="formPasswordConfirm" placeholder="Confirm Password">
+                <small>Error Message</small>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="scripts/index.js"></script>
 </body>
 </html>
